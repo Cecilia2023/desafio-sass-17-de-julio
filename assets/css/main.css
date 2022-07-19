@@ -1,0 +1,65 @@
+/*VARIABLES*/
+/* Colors */
+/* Spacings */
+/*Font-family */
+/* Font-Sizes */
+/*NORMALIZE*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap");
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Barlow", sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  color: #2B2B2B; }
+
+img {
+  width: 100%; }
+
+/*MIXINS*/
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--spacing-small) 0;
+  border-bottom: 2px solid var(--secondary);
+  margin-top: 20px; }
+  header .header__img {
+    max-width: 120px; }
+  header .menu {
+    display: flex;
+    gap: 2rem; }
+  header .menu__link {
+    font-size: 2.2em;
+    padding: 1rem;
+    border: 2px solid #fff; }
+    header .menu__link:hover {
+      color: blue; }
+
+/*FOOTER*/
+/*VIEWS*/
+/*BUTTONS*/
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--send-mail {
+  background-color: #C25E30; }
